@@ -1,7 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "public"
-
-[[environment]]
-  name = "API_KEY"
-  value = "your_api_key_here"
