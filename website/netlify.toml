@@ -1,0 +1,9 @@
+[build]
+  # The command to build your site
+  command = "npm run build"
+
+  # The directory that contains the build output
+  publish = "dist/"
+
+  # The directory that contains the source files for your project
+  base = "/"
