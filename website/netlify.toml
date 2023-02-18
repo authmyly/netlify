@@ -1,9 +1,9 @@
 [build]
   # The command to build your site
-  command = "npm run build"
+  command = "echo 'default context'"
 
   # The directory that contains the build output
-  publish = "/dist/"
+  publish = "build-output/"
 
   # The directory that contains the source files for your project
-  base = "/"
+  base = "project/"
