@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>One-Piece</title>
+</head>
+<body>
+  <header>
+    <img src="https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png" alt="">
+  </header>
+  <div class="container">
+    <div class="left">
+
+      <div class="listofindex">
+        <div class="faq">
+          <h2 class="question"><span class="world-icon">+</span> Mathématiques</h2>
+
+
+
+          <div class="answer">
+            <p class="semester">Semestre 1</p>
+            <p>Limites et dérivation</p>
+            <p>Continuité 1</p>
+            <p>Continuité 2</p>
+            <p>Dérivation et étude des fonctions 1</p>
+            <p>Dérivation et étude des fonctions 2</p>
+            <p>Limite d'une suite</p>
+            <p>Fonctions primitives</p>
+            <p>Fonctions logarithmiques</p>
+            <p>Nombres complexes (Partie 1)</p>
+            <p class="semester">Semestre 1</p>
+            <p>Fonctions exponentielles</p>
+            <p>Nombres complexes (Partie 2)</p>
+            <p>Calcul intégral</p>
+            <p>Équations différentielles</p>
+            <p>Géométrie dans l’espace 1 : Produit scalaire</p>
+            <p>Géométrie dans l’espace 2 : Produit vectoriel</p>
+            <p>Dénombrement</p>
+            <p>Probabilités</p>
+          </div>
+
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> Physique et Chimie</h2>
+          <div class="answer">
+            <p>Limites et dérivation</p>
+            <p>Continuité (Partie 1)</p>
+            <p>Continuité (Partie 2)</p>
+            <p>Dérivation et étude des fonctions (Partie 1)</p>
+            <p>Dérivation et étude des fonctions (Partie 2)</p>
+            <p>Limite d'une suite</p>
+            <p>Fonctions primitives</p>
+            <p>Fonctions logarithmiques</p>
+            <p>Nombres complexes (Partie 1)</p>
+            <p>Fonctions exponentielles</p>
+            <p>Nombres complexes (Partie 2)</p>
+            <p>Calcul intégral</p>
+            <p>Équations différentielles</p>
+            <p>Géométrie dans l’espace 1 : Produit scalaire</p>
+            <p>Géométrie dans l’espace 2 : Produit vectoriel</p>
+            <p>Dénombrement</p>
+            <p>Probabilités</p>
+          </div>
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> SVT</h2>
+          <div class="answer">
+            <p>Answer to Sciences de la Vie et de la Terre goes here...</p>
+          </div>
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> Français</h2>
+          <div class="answer">
+            <p>Answer to Français goes here...</p>
+          </div>
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> Islamique Educ</h2>
+          <div class="answer">
+            <p>Answer to Education Islamique goes here...</p>
+          </div>
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> Arabe</h2>
+          <div class="answer">
+            <p>Answer to Arabe goes here...</p>
+          </div>
+
+
+
+          <h2 class="question"><span class="world-icon">+</span> Philosophie</h2>
+          <div class="answer">
+            <p class="question">Answer to Philosophie goes here...</p>
+          </div>
+        </div>
+        <div class="world-content">
+          <!-- World content here -->
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="right">
+ 
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <script>
+        const questions = document.querySelectorAll('.faq .question');
+
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    // Toggle the active class on the clicked question
+    question.classList.toggle('active');
+    // Find the corresponding answer element
+    const answer = question.nextElementSibling;
+    // Toggle the active class on the answer element
+    answer.classList.toggle('active');
+  });
+});
+
+const worldContainer = document.querySelector('.world-container');
+const worldIcon = document.querySelector('.world-icon');
+const worldContent = document.querySelector('.world-content');
+
+worldContainer.addEventListener('click', function() {
+  if (worldContent.style.display === 'none') {
+    worldContent.style.display = 'block';
+    worldIcon.textContent = '-';
+  } else {
+    worldContent.style.display = 'none';
+    worldIcon.textContent = '+';
+  }
+});
+      </script>
+      <script>
+        const headers = document.querySelectorAll('.question');
+
+headers.forEach(header => {
+  const icon = header.querySelector('.world-icon');
+
+  header.addEventListener('click', function() {
+    icon.classList.toggle('active');
+    if (icon.textContent === '+') {
+      icon.textContent = '-';
+    } else {
+      icon.textContent = '+';
+    }
+  });
+});
+
+
+      </script>
+      
+</body>
+</html>

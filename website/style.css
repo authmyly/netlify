@@ -1,0 +1,120 @@
+
+header{
+  background-color:#3d4a4e;
+  padding: 010px;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items:
+}
+header img{
+  width: 60px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #3d4a4e;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  background-image: url(https://img.freepik.com/premium-vector/school-doodle-pattern-hand-drawn-education-elements-school-seamless-monochrome-background_502651-627.jpg?w=2000);
+  background-size: cover;
+  height: 100vh;
+  width: 40%;
+}
+
+.right {
+  background-color:#3d4a4e;
+  width: 60%;
+
+}
+
+
+.listofindex {
+  background-color: rgb(46, 57, 59);
+  width: 80%;
+  height: 40%;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 25px;
+  padding: 20px;
+  color:white;
+  overflow: scroll;
+  overflow-x: auto;
+  opacity: 0.9;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 3);
+
+}
+.listofindex p{
+  margin-left: 40px;
+}
+.listofindex::-webkit-scrollbar{
+  width: 0;
+}
+
+.faq .answer {
+  display: none;
+}
+
+.faq .question {
+  cursor: pointer;
+}
+
+.faq .question.active {
+  font-weight: bold;
+}
+
+.faq .answer.active {
+  display: block;
+}
+@media (max-width: 1090px) {
+  .left{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 20px;
+  }
+  .right {
+    height: 400px;
+    width: 100%;
+  }
+  .listofindex {
+    height: 80%;
+    margin: 20px  auto ;
+    
+ 
+  }
+  
+}
+.semester{
+  color:#5ba7d3;
+}
+.world-container {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.world-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #466b7e;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.world-content {
+  display: none;
+}
